@@ -1,1 +1,45 @@
-HOME PAGE !
+<header class="text-gray-700 bg-white border-t border-b body-font">
+    <div class="container flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row">
+        <a class="flex items-center w-40 font-medium text-gray-900 title-font md:mb-0">
+            <h1 class="text-2xl font-semibold tracking-tighter">Sketch2Site</h1>
+        </a>
+        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
+        </nav>
+    </div>
+</header>
+
+
+<section class="text-gray-700 body-font">
+    <div class="container flex flex-col px-5 py-24 mx-auto lg:items-center">
+        <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+            <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-black sm:text-5xl title-font"> Sketch2Site</h1>
+            <p class="mx-auto text-base font-medium leading-relaxed text-gray-700 lg:w-1/2">Upload a hand drawn sketch
+                of the webapp design
+            </p>
+        </div>
+        <form method="POST" enctype="multipart/form-data" id="upload-form">
+            <input type="file" name="image" id="hidden-file-upload" />
+            {{!-- <div class="flex justify-left lg:justify-center">
+                <section class="flex flex-col w-full h-full p-1 overflow-auto">
+                    <header
+                        class="flex flex-col items-center justify-center py-12 text-base text-gray-500 transition duration-500 ease-in-out transform bg-white border border-dashed rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                        <p class="flex flex-wrap justify-center mb-3 text-base leading-7 text-gray-500 m-6">
+                            <span>Click on the button below to upload</span>
+                        </p>
+                        <button id="upload-button"
+                            class="w-auto px-2 py-1 my-2 mr-2 text-gray-500 transition duration-500 ease-in-out transform border rounded-md hover:text-gray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-gray-100">
+                            Upload a sketch </button>
+                    </header>
+                </section>
+            </div> --}}
+            <div class="flex justify-left lg:justify-center">
+                <section class="flex flex-col w-full h-full p-1 overflow-auto">
+                    <button type="submit"
+                        class="w-auto px-2 py-1 my-2 mr-2 text-gray-500 transition duration-500 ease-in-out transform border rounded-md hover:text-gray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-gray-100">
+                        Convert to site </button>
+                </section>
+            </div>
+    </div>
+</section>
+</form>
+<script src="js/homepage.js"></script>
